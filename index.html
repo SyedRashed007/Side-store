@@ -4,9 +4,171 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Side Store</title>
+
+    <link
+      rel="shortcut icon"
+      href="/assets/logos/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/logos/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/logos/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <link rel="stylesheet" href="/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://side-library.netlify.app/css/main.css"
+    />
   </head>
+
   <body>
-    Hello
+    <header>
+      <nav class="container navbar-align">
+        <div class="navbar-align">
+          <img class="logo" src="/assets/images/Logo.jpg" alt="Side store" />
+          <a class="brand-name" href="/index.html">
+            <span class="link mark-text">Side store</span>
+          </a>
+        </div>
+        <form class="navbar-form">
+          <input type="text" placeholder="Search for product" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="navbar-align">
+          <button class="navbar-btn-log">Login</button>
+          <a class="link badge-btn" href="#">
+            <i class="fas fa-heart">
+              <span class="badge-count">0</span>
+            </i>
+          </a>
+          <a class="link badge-btn" href="#">
+            <i class="fas fa-shopping-cart">
+              <span class="badge-count">0</span>
+            </i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="container main">
+      <div class="hero-img-container">
+        <img src="/assets/images/Products.jpg" class="product-image" alt="" />
+      </div>
+
+      <section class="section">
+        <h1 class="link section-heading">Categories</h1>
+
+        <ul class="section-container">
+          <li class="section-subcontainer">
+            <div class="card category-card">
+              <img class="img img-round" src="/assets/images/Men.jpg" alt="" />
+              <h2 class="link img-header">Men's Clothing</h2>
+            </div>
+          </li>
+
+          <li class="section-subcontainer">
+            <div class="card category-card">
+              <img
+                class="img img-round"
+                src="/assets/images/Women.jpg"
+                alt=""
+              />
+              <h2 class="link img-header">Women's Clothing</h2>
+            </div>
+          </li>
+
+          <li class="section-subcontainer">
+            <div class="card category-card">
+              <img class="img img-round" src="/assets/images/Kids.jpg" alt="" />
+              <h2 class="link img-header">Kid's Clothing</h2>
+            </div>
+          </li>
+
+          <li class="section-subcontainer">
+            <div class="card category-card">
+              <img
+                class="img img-round"
+                src="/assets/images/Accessories.jpg"
+                alt=""
+              />
+              <h2 class="link img-header">Accessories</h2>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="subcontainer">
+          <div class="footer-subcontainer">
+            <ul class="links">
+              <span> Quick Links </span>
+              <div class="quick-links">
+                <li class="connect">
+                  <a class="link" href="/index.html">Home</a>
+                </li>
+                <li class="connect">
+                  <a class="link" href="/about.html">Products</a>
+                </li>
+                <li class="connect">
+                  <a class="link" href="/about.html">My Cart</a>
+                </li>
+                <li class="connect">
+                  <a class="link" href="/about.html">My Wish List</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="footer-subcontainer">
+            <ul class="links">
+              <span> Connect with me </span>
+              <div class="links-connect">
+                <li class="connect">
+                  <a
+                    class="link link-social"
+                    href="https://github.com/SyedRashed007"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="connect">
+                  <a
+                    class="link link-social"
+                    href="https://twitter.com/SyedRasheduddin"
+                  >
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                </li>
+                <li class="connect">
+                  <a
+                    class="link link-social"
+                    href="https://www.linkedin.com/in/syed-rasheduddin/"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap");
+
+@import url("./pages/homepage.css");
+
+:root {
+  --gray: #ccc;
+  --lightGray: #f3ebeb;
+  --darkGray: #664c4c;
+  --darkBlue: #334155;
+  --white: #ffffff;
+  --darkWhite: #fafafa;
+  --black: #000000;
+  --lightBlack: #292927;
+}
+
+.container {
+  margin: auto;
+  max-width: 140rem;
+  padding: 1rem 2rem 2rem 1rem;
+  border-bottom: 1px solid var(--gray);
+}
+.link {
+  position: relative;
+  text-decoration: none;
+}
+.link:after {
+  background: var(--darkGray);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transition: width 0.3s, left 0.3s;
+  width: 0;
+}
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
