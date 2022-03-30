@@ -1,0 +1,14 @@
+.card-horizontal {
+  height: 38rem;
+  width: 20rem;
+}
+.badge-card {
+  background-color: var(--white);
+  color: var(--red);
+  position: absolute;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  right: 0;
+  top: 2%;
+  border-radius: 50%;
+}

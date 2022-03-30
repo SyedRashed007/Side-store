@@ -3,6 +3,8 @@
 @import url("./css/homepage.css");
 @import url("./css/auth.css");
 
+@import url("./css/wishlist.css");
+
 :root {
   --gray: #ccc;
   --lightGray: #f3ebeb;
