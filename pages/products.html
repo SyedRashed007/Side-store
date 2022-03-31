@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Store</title>
+
+    <link
+      rel="shortcut icon"
+      href="/assets/logos/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/logos/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/logos/apple-touch-icon.png"
+      sizes="180x180"
+    />
+
+    <link rel="stylesheet" href="/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://side-library.netlify.app/css/main.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container navbar-align">
+        <div class="navbar-align">
+          <img class="logo" src="/assets/images/Logo.jpg" alt="Side store" />
+          <a class="brand-name" href="/index.html">
+            <span class="link mark-text">Side store</span>
+          </a>
+        </div>
+        <form class="navbar-form">
+          <input type="text" placeholder="Search for product" />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="navbar-align">
+          <button class="navbar-btn-log">Login</button>
+          <a class="link badge-btn" href="#">
+            <i class="fas fa-heart">
+              <span class="badge-count">0</span>
+            </i>
+          </a>
+          <a class="link badge-btn" href="#">
+            <i class="fas fa-shopping-cart">
+              <span class="badge-count">0</span>
+            </i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="flex">
+      <aside class="filter-container">
+        <div>
+          <h3>Filters</h3>
+          <button class="border-none link">Clear All</button>
+        </div>
+
+        <ul>
+          <h3 class="mb-2">Sort by</h3>
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="low-to-high">
+              <input
+                class="cursor-ptr mr-1"
+                type="radio"
+                name="price"
+                id="low-to-high"
+                value="Low to High"
+              />
+              Price - Low to High
+            </label>
+          </li>
+
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="high-to-low">
+              <input
+                class="cursor-ptr mr-1"
+                type="radio"
+                name="price"
+                id="high-to-low"
+                value="High to Low"
+              />
+              Price - High to Low
+            </label>
+          </li>
+        </ul>
+
+        <ul>
+          <h3 class="mb-2">Category</h3>
+
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="mens-clothing">
+              <input
+                class="cursor-ptr mr-1"
+                type="checkbox"
+                name="category"
+                id="mens-clothing"
+                value="Men's Clothing"
+              />
+              Men's Clothing
+            </label>
+          </li>
+
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="kids-clothing">
+              <input
+                class="cursor-ptr mr-1"
+                type="checkbox"
+                name="category"
+                id="kids-clothing"
+                value="Kid's Clothing"
+              />
+              Kid's Clothing
+            </label>
+          </li>
+
+          <li class="my-0p5 ml-1">
+            <label class="cursor-ptr" for="Accessories">
+              <input
+                class="cursor-ptr mr-1"
+                type="checkbox"
+                name="category"
+                id="accessories"
+                value="Accessories"
+              />
+              Accessories
+            </label>
+          </li>
+        </ul>
+
+        <ul class="p-2">
+          <h3 class="mb-2">Ratings</h3>
+
+          <li class="flex justify-c-sb my-0p5 ml-1">
+            <span class="fs-1p5 fw-bold">1</span>
+            <span class="fs-1p5 fw-bold">2</span>
+            <span class="fs-1p5 fw-bold">3</span>
+            <span class="fs-1p5 fw-bold">4</span>
+            <span class="fs-1p5 fw-bold">5</span>
+          </li>
+
+          <li class="my-0p5 ml-1">
+            <input
+              type="range"
+              min="1"
+              max="5"
+              value="2"
+              step="0.1"
+              class="cursor-ptr w-100pct"
+            />
+          </li>
+        </ul>
+      </aside>
+
+        <section>
+          <div class="flex">
+            <div class="card card-horizontal ml-3 mr-3 mt-3 mb-3">
+              <img 
+                class="card-img"
+                src="/assets/images/Men.jpg" alt="..." 
+              />
+              <span class="card-badge">Best Seller</span>
+              <div class="card-info">
+                <div class="card-title">
+                  <div>
+                    <h3 class="card-title-header">Classic Tracksuit Top</h3>
+                    <p class="card-description">Soft & comfy</p>
+                  </div>
+                    <i class="fa fa-heart-o icon-heart" aria-hidden="true"></i>
+                </div>
+                <div class="card-vertical-footer">
+                  <span class="current-price"><strong>Rs.416</strong></span>
+                  <span class="earlier-price">Rs.1,780</span>
+                  <span class="pct-off">76% off</span>
+                </div>
+              </div>
+              <button class="cart-btn default add-cart">Add to Cart</button>
+            </div>
+            
+            <div class="card card-horizontal ml-3 mr-3 mt-3 mb-3">
+            <img 
+              class="card-img"
+              src="/assets/images/Women.jpg" alt="Women" 
+              />
+            <div class="card-info">
+              <div class="card-title">
+                <div>
+                  <h3 class="card-title-header">Two Tone Vest Top</h3>
+                  <p class="card-description">Soft & comfy</p>
+                </div>
+                <i class="fa fa-heart-o icon-heart" aria-hidden="true"></i>
+              </div>
+              <div class="card-vertical-footer">
+                <span class="current-price"><strong>Rs.416</strong></span>
+                <span class="earlier-price">Rs.1,780</span>
+                <span class="pct-off">76% off</span>
+              </div>
+            </div>
+            <button class="cart-btn default add-cart">Add to Cart</button>
+          </div>
+
+            <div class="card card-horizontal ml-3 mr-3 mt-3 mb-3">
+              <img 
+                class="card-img"
+                src="/assets/images/Kids.jpg" alt="Kids" 
+              />
+              <div class="card-info">
+                <div class="card-title">
+                  <div>
+                    <h3 class="card-title-header">Classic Black Hoodie</h3>
+                    <p class="card-description">Soft & comfy</p>
+                  </div>
+                    <i class="fa fa-heart-o icon-heart" aria-hidden="true"></i>
+                </div>
+                <div class="card-vertical-footer">
+                  <span class="current-price"><strong>Rs.416</strong></span>
+                  <span class="earlier-price">Rs.1,780</span>
+                  <span class="pct-off">76% off</span>
+                </div>
+              </div>
+              <button class="cart-btn default add-cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="card card-horizontal ml-3 mr-3 mt-3 mb-3">
+              <img 
+                class="card-img"
+                src="/assets/images/Accessories.jpg" alt="..." 
+              />
+              <span class="card-badge">Best Seller</span>
+              <div class="card-info">
+                <div class="card-title">
+                  <div>
+                    <h3 class="card-title-header">Two Tone 1L Bottle</h3>
+                    <p class="card-description">Plastic</p>
+                  </div>
+                    <i class="fa fa-heart-o icon-heart" aria-hidden="true"></i>
+                </div>
+                <div class="card-vertical-footer">
+                  <span class="current-price"><strong>Rs.416</strong></span>
+                  <span class="earlier-price">Rs.1,780</span>
+                  <span class="pct-off">76% off</span>
+                </div>
+              </div>
+              <button class="cart-btn default add-cart">Add to Cart</button>
+            </div>
+
+            <div class="card card-horizontal ml-3 mr-3 mt-3 mb-3">
+              <img 
+                class="card-img"
+                src="/assets/images/Men.jpg" alt="..." 
+              />
+              <span class="card-badge">Best Seller</span>
+              <div class="card-info">
+                <div class="card-title">
+                  <div>
+                    <h3 class="card-title-header">Classic Tracksuit Top</h3>
+                    <p class="card-description">Soft & comfy</p>
+                  </div>
+                    <i class="fa fa-heart-o icon-heart" aria-hidden="true"></i>
+                </div>
+                <div class="card-vertical-footer">
+                  <span class="current-price"><strong>Rs.416</strong></span>
+                  <span class="earlier-price">Rs.1,780</span>
+                  <span class="pct-off">76% off</span>
+                </div>
+              </div>
+              <button class="cart-btn default add-cart">Add to Cart</button>
+            </div>
+
+            <div class="card card-horizontal ml-3 mr-3 mt-3 mb-3">
+              <img 
+                class="card-img"
+                src="/assets/images/Women.jpg" alt="..." 
+              />
+              <div class="card-info">
+                <div class="card-title">
+                  <div>
+                    <h3 class="card-title-header">Two Tone Vest Top</h3>
+                    <p class="card-description">Soft & comfy</p>
+                  </div>
+                    <i class="fa fa-heart-o icon-heart" aria-hidden="true"></i>
+                </div>
+                <div class="card-vertical-footer">
+                  <span class="current-price"><strong>Rs.416</strong></span>
+                  <span class="earlier-price">Rs.1,780</span>
+                  <span class="pct-off">76% off</span>
+                </div>
+              </div>
+              <button class="cart-btn default add-cart">Add to Cart</button>
+            </div>
+          </div>
+  
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="subcontainer">
+          <div class="footer-subcontainer">
+            <ul class="links">
+              <span> Quick Links </span>
+              <div class="quick-links">
+                <li class="connect">
+                  <a class="link" href="/index.html">Home</a>
+                </li>
+                <li class="connect">
+                  <a class="link" href="/pages/products.html">Products</a>
+                </li>
+                <li class="connect">
+                  <a class="link" href="/about.html">My Cart</a>
+                </li>
+                <li class="connect">
+                  <a class="link" href="/about.html">My Wish List</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="footer-subcontainer">
+            <ul class="links">
+              <span> Connect with me </span>
+              <div class="links-connect">
+                <li class="connect">
+                  <a
+                    class="link link-social"
+                    href="https://github.com/SyedRashed007"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="connect">
+                  <a
+                    class="link link-social"
+                    href="https://twitter.com/SyedRasheduddin"
+                  >
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                </li>
+                <li class="connect">
+                  <a
+                    class="link link-social"
+                    href="https://www.linkedin.com/in/syed-rasheduddin/"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
