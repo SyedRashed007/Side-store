@@ -4,25 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Side Store</title>
+    <title>Document</title>
 
-    <link
-      rel="shortcut icon"
-      href="/assets/logos/favicon-16x16.png"
-      sizes="16x16"
-    />
-    <link
-      rel="shortcut icon"
-      href="/assets/logos/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="shortcut icon"
-      href="/assets/logos/apple-touch-icon.png"
-      sizes="180x180"
-    />
-
-    <link rel="stylesheet" href="/app.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -31,12 +14,13 @@
       referrerpolicy="no-referrer"
     />
 
+    <link rel="stylesheet" href="/app.css" />
+
     <link
       rel="stylesheet"
       href="https://side-library.netlify.app/css/main.css"
     />
   </head>
-
   <body>
     <header>
       <nav class="container navbar-align">
@@ -51,9 +35,7 @@
           <button type="submit"><i class="fas fa-search"></i></button>
         </form>
         <div class="navbar-align">
-          <a href="/pages/login.html">
-            <button class="navbar-btn-log">Login</button>
-          </a>
+          <button class="navbar-btn-log">Login</button>
           <a class="link badge-btn" href="#">
             <i class="fas fa-heart">
               <span class="badge-count">0</span>
@@ -67,52 +49,74 @@
         </div>
       </nav>
     </header>
-    <main class="container main">
-      <div class="hero-img-container">
-        <img src="/assets/images/Products.jpg" class="product-image" alt="" />
+
+    <main class="container">
+      <div class="login-box">
+        <div class="form-box">
+          <h2 class="login-title link mb-1">Sign up</h2>
+          <form>
+            <div>
+              <label class="user-data mt-1 fw-bold">First Name</label>
+              <input
+                class="input input-box"
+                type="text"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div>
+              <label class="user-data mt-1 fw-bold">Last Name</label>
+              <input
+                class="input input-box"
+                type="text"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div>
+              <label class="user-data mt-1 fw-bold">Email Address</label>
+              <input
+                class="input input-box"
+                type="email"
+                placeholder="Enter your email address"
+              />
+            </div>
+            <div>
+              <label class="user-data mt-1 fw-bold">Password</label>
+              <input
+                class="input input-box"
+                type="password"
+                placeholder="*********"
+              />
+              <button class="border-none p-0.5">
+                <i class="far fa-eye-slash"></i>
+              </button>
+            </div>
+            <div>
+              <label class="user-data mt-1 fw-bold">Confirm Password</label>
+              <input
+                class="input input-box"
+                type="password"
+                id="confirm-password"
+                placeholder="********"
+              />
+              <button class="bg-white border-none px-0p5">
+                <i class="far fa-eye"></i>
+              </button>
+            </div>
+
+            <button
+              class="btn default w-100pct p-1 outline-none border-none m-0p5 py-1 cursor-ptr fs-1 border-r-1"
+            >
+              Create New Account
+            </button>
+            <div>
+              Already using Side store?
+              <a class="link fw-bold mt-1 inline-block" href="/pages/login.html"
+                >Log In</a
+              >
+            </div>
+          </form>
+        </div>
       </div>
-
-      <section class="section">
-        <h1 class="link section-heading">Categories</h1>
-
-        <ul class="section-container">
-          <li class="section-subcontainer">
-            <div class="cards category-card">
-              <img class="img img-round" src="/assets/images/Men.jpg" alt="" />
-              <h2 class="link img-header">Men's Clothing</h2>
-            </div>
-          </li>
-
-          <li class="section-subcontainer">
-            <div class="cards category-card">
-              <img
-                class="img img-round"
-                src="/assets/images/Women.jpg"
-                alt=""
-              />
-              <h2 class="link img-header">Women's Clothing</h2>
-            </div>
-          </li>
-
-          <li class="section-subcontainer">
-            <div class="cards category-card">
-              <img class="img img-round" src="/assets/images/Kids.jpg" alt="" />
-              <h2 class="link img-header">Kid's Clothing</h2>
-            </div>
-          </li>
-
-          <li class="section-subcontainer">
-            <div class="cards category-card">
-              <img
-                class="img img-round"
-                src="/assets/images/Accessories.jpg"
-                alt=""
-              />
-              <h2 class="link img-header">Accessories</h2>
-            </div>
-          </li>
-        </ul>
-      </section>
     </main>
 
     <footer class="footer">
@@ -126,7 +130,7 @@
                   <a class="link" href="/index.html">Home</a>
                 </li>
                 <li class="connect">
-                  <a class="link" href="/pages/products.html">Products</a>
+                  <a class="link" href="/about.html">Products</a>
                 </li>
                 <li class="connect">
                   <a class="link" href="/about.html">My Cart</a>

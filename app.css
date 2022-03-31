@@ -2,8 +2,10 @@
 
 @import url("./css/homepage.css");
 
+
 @import url("./css/products.css");
 
+@import url("./css/auth.css");
 :root {
   --gray: #ccc;
   --lightGray: #f3ebeb;

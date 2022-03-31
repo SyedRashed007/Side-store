@@ -1,0 +1,38 @@
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-box {
+  border: 3px solid var(--darkBlue);
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.login-title {
+  color: var(--darkGray);
+  text-transform: uppercase;
+  width: max-content;
+  letter-spacing: 1px;
+}
+.input-box {
+  height: 2.5rem;
+  padding: 1rem 1rem 1rem 1rem;
+  font-size: 0.5rem;
+}
+.input-container input {
+  font-size: 0.5rem;
+}
+.user-data {
+  margin-bottom: 5px;
+  display: inline-block;
+  color: var(--darkGray);
+  letter-spacing: 1px;
+  /* font-weight: bold; */
+}
+.remember {
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: normal;
+  width: max-content;
+}
