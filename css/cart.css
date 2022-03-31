@@ -1,0 +1,27 @@
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cart-price-card {
+  flex-direction: column;
+  overflow: hidden;
+  padding: 3rem;
+  width: 45rem;
+}
+.cart-price-details-text {
+  border-bottom: thin solid var(--lightBlue);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.cart-total-amt-text {
+  align-items: center;
+  border-bottom: thin solid var(--lightBlue);
+  border-top: thin solid var(--lightBlue);
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
