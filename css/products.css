@@ -7,7 +7,7 @@
   width: 20rem;
 }
 
-:is(.filter-container, .filter-md-container) > div {
+:is(.filter-container) > div {
   align-items: center;
   border-bottom: thin solid var(--lightBlue);
   display: flex;
@@ -15,14 +15,9 @@
   padding: 1rem;
 }
 
-:is(.filter-container, .filter-md-container) > ul:not(.p-2) {
+:is(.filter-container) > ul:not(.p-2) {
   border-bottom: thin solid var(--lightBlue);
   padding: 1rem;
-}
-
-.btn-md-filter,
-.filter-md-container {
-  display: none;
 }
 
 .card-horizontal {
